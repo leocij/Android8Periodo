@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.leoci.somanumeros.MainActivity">
+
+    <TextView
+        android:text="Valor 1:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/textViewValor1"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textViewValor2"
+        android:layout_alignStart="@+id/textViewValor2" />
+
+    <TextView
+        android:text="Valor 2: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewValor2"
+        android:layout_alignBottom="@+id/editTextNumero2"
+        android:layout_alignRight="@+id/textViewResultado"
+        android:layout_alignEnd="@+id/textViewResultado" />
+
+    <Button
+        android:text="Somar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSomar"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/editTextNumero2"
+        android:layout_alignLeft="@+id/editTextNumero2"
+        android:layout_alignStart="@+id/editTextNumero2"
+        android:layout_alignRight="@+id/editTextNumero2"
+        android:layout_alignEnd="@+id/editTextNumero2" />
+
+    <Button
+        android:text="Subtrair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/buttonSubtrair"
+        android:layout_below="@+id/buttonSomar"
+        android:layout_alignLeft="@+id/buttonSomar"
+        android:layout_alignStart="@+id/buttonSomar"
+        android:layout_alignRight="@+id/buttonSomar"
+        android:layout_alignEnd="@+id/buttonSomar" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextNumero2"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/editTextNumero1"
+        android:layout_alignLeft="@+id/editTextNumero1"
+        android:layout_alignStart="@+id/editTextNumero1" />
+
+    <TextView
+        android:text="Resultado: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResultado"
+        android:layout_below="@+id/buttonSubtrair"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextNumero1"
+        android:layout_alignBottom="@+id/textViewValor1"
+        android:layout_toRightOf="@+id/textViewValor2"
+        android:layout_toEndOf="@+id/textViewValor2"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignBottom="@+id/textViewResultado"
+        android:layout_alignLeft="@+id/buttonSubtrair"
+        android:layout_alignStart="@+id/buttonSubtrair"
+        android:id="@+id/editTextResultado" />
+
+</RelativeLayout>

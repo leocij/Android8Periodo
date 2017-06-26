@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnCadProdSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:text="Salvar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtCadProdPreco" />
+
+    <Button
+        android:id="@+id/btnCadProdVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Voltar"
+        app:layout_constraintLeft_toRightOf="@+id/btnCadProdSalvar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtCadProdPreco" />
+
+    <TextView
+        android:id="@+id/lbCadProdProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="16dp"
+        android:text="Produto: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbCadProdQuant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:text="Quantidade: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtCadProdProduto" />
+
+    <TextView
+        android:id="@+id/lbCadProdPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço: "
+        android:layout_marginLeft="27dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtCadProdQuant" />
+
+    <EditText
+        android:id="@+id/txtCadProdProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/lbCadProdProduto" />
+
+    <EditText
+        android:id="@+id/txtCadProdQuant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginLeft="27dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/lbCadProdQuant" />
+
+    <EditText
+        android:id="@+id/txtCadProdPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="27dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/lbCadProdPreco" />
+
+</android.support.constraint.ConstraintLayout>
